@@ -1,0 +1,108 @@
+z<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - AI Prompt Governance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <div th:replace="fragments/layout :: sidebar"></div>
+
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+                <div class="container-fluid">
+                    <button class="btn btn-outline-secondary btn-sm" id="sidebarToggle">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <span class="navbar-text ms-auto">
+                        <i class="bi bi-person-circle me-1"></i>
+                        <span sec:authentication="name">User</span>
+                    </span>
+                </div>
+            </nav>
+
+            <div class="container-fluid p-4">
+                <div class="row g-4">
+                    <!-- Profile Info -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <div class="profile-avatar mb-3">
+                                    <i class="bi bi-person-circle" style="font-size: 5rem; color: #6c757d;"></i>
+                                </div>
+                                <h5 sec:authentication="principal.name">User Name</h5>
+                                <p class="text-muted mb-1" sec:authentication="principal.email">Email</p>
+                                <span class="badge bg-secondary" sec:authentication="principal.role">Role</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile Edit Form -->
+                    <div class="col-md-8">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-header bg-white py-3">
+                                <h5 class="mb-0"><i class="bi bi-pencil-square me-2"></i>Edit Profile</h5>
+                            </div>
+                            <div class="card-body p-4">
+                                <form th:action="@{/profile/update}" method="post" th:object="${profile}">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" id="name" th:field="*{name}" class="form-control" placeholder="Enter your name">
+                                        <div th:if="${#fields.hasErrors('name')}" class="text-danger small mt-1">
+                                            <span th:errors="*{name}">Name error</span>
+                                        </div>
+                                    </div>
+
+                                    <hr class="my-4">
+                                    <h6 class="text-muted mb-3"><i class="bi bi-lock me-2"></i>Change Password (Optional)</h6>
+
+                                    <div class="mb-3">
+                                        <label for="currentPassword" class="form-label">Current Password</label>
+                                        <input type="password" id="currentPassword" th:field="*{currentPassword}" class="form-control" placeholder="Enter current password">
+                                        <div th:if="${#fields.hasErrors('currentPassword')}" class="text-danger small mt-1">
+                                            <span th:errors="*{currentPassword}">Password error</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="newPassword" class="form-label">New Password</label>
+                                            <input type="password" id="newPassword" th:field="*{newPassword}" class="form-control" placeholder="Enter new password (min 6 chars)">
+                                            <div th:if="${#fields.hasErrors('newPassword')}" class="text-danger small mt-1">
+                                                <span th:errors="*{newPassword}">Password error</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="confirmNewPassword" class="form-label">Confirm New Password</label>
+                                            <input type="password" id="confirmNewPassword" th:field="*{confirmNewPassword}" class="form-control" placeholder="Confirm new password">
+                                            <div th:if="${#fields.hasErrors('confirmNewPassword')}" class="text-danger small mt-1">
+                                                <span th:errors="*{confirmNewPassword}">Password error</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <button type="submit" class="btn btn-primary px-4">
+                                            <i class="bi bi-check-lg me-1"></i> Update Profile
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script th:src="@{/js/main.js}"></script>
+</body>
+</html>
+

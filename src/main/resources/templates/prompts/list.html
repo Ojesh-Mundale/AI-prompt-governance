@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Prompts - AI Prompt Governance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <div th:replace="fragments/layout :: sidebar"></div>
+
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+                <div class="container-fluid">
+                    <button class="btn btn-outline-secondary btn-sm" id="sidebarToggle">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <span class="navbar-text ms-auto">
+                        <i class="bi bi-person-circle me-1"></i>
+                        <span sec:authentication="name">User</span>
+                    </span>
+                </div>
+            </nav>
+
+            <div class="container-fluid p-4">
+                <!-- Page Header -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h4 class="mb-0"><i class="bi bi-chat-dots me-2"></i>My Prompts</h4>
+                    <a th:href="@{/prompts/new}" class="btn btn-primary">
+                        <i class="bi bi-plus-circle me-1"></i> Add Prompt
+                    </a>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body py-3">
+                        <form th:action="@{/prompts}" method="get" class="row g-2 align-items-center">
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-search"></i></span>
+                                    <input type="text" class="form-control" name="keyword" th:value="${keyword}" placeholder="Search by title or prompt text...">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-outline-primary w-100">
+                                    <i class="bi bi-search me-1"></i> Search
+                                </button>
+                            </div>
+                            <div class="col-md-2">
+                                <a th:href="@{/prompts}" class="btn btn-outline-secondary w-100" th:if="${keyword != null}">
+                                    <i class="bi bi-x-circle me-1"></i> Clear
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Prompts Table -->
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-0">
+                        <div th:if="${#lists.isEmpty(prompts)}" class="text-center py-5">
+                            <i class="bi bi-inbox text-muted" style="font-size: 3rem;"></i>
+                            <p class="text-muted mt-2">No prompts found.</p>
+                            <a th:href="@{/prompts/new}" class="btn btn-primary">
+                                <i class="bi bi-plus-circle me-1"></i> Create First Prompt
+                            </a>
+                        </div>
+                        <div th:unless="${#lists.isEmpty(prompts)}">
+                            <div class="table-responsive">
+                                <table class="table table-hover mb-0">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>
+                                                <a th:href="@{/prompts(page=${currentPage}, size=${prompts.size()}, sortField='title', sortDir=${reverseSortDir}, keyword=${keyword})}" class="text-decoration-none text-dark">
+                                                    Title <i class="bi bi-arrow-down-up small"></i>
+                                                </a>
+                                            </th>
+                                            <th>Category</th>
+                                            <th>
+                                                <a th:href="@{/prompts(page=${currentPage}, size=${prompts.size()}, sortField='status', sortDir=${reverseSortDir}, keyword=${keyword})}" class="text-decoration-none text-dark">
+                                                    Status <i class="bi bi-arrow-down-up small"></i>
+                                                </a>
+                                            </th>
+                                            <th>
+                                                <a th:href="@{/prompts(page=${currentPage}, size=${prompts.size()}, sortField='createdDate', sortDir=${reverseSortDir}, keyword=${keyword})}" class="text-decoration-none text-dark">
+                                                    Date <i class="bi bi-arrow-down-up small"></i>
+                                                </a>
+                                            </th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr th:each="prompt : ${prompts}">
+                                            <td>
+                                                <a th:href="@{/prompts/view/{id}(id=${prompt.id})}" class="text-decoration-none fw-medium" th:text="${prompt.title}">Title</a>
+                                            </td>
+                                            <td><span class="badge bg-info" th:text="${prompt.category}">Category</span></td>
+                                            <td>
+                                                <span th:if="${prompt.status == 'SAFE'}" class="badge bg-success">Safe</span>
+                                                <span th:if="${prompt.status == 'MEDIUM'}" class="badge bg-warning text-dark">Medium</span>
+                                                <span th:if="${prompt.status == 'HIGH'}" class="badge bg-danger">High Risk</span>
+                                                <span th:if="${prompt.status == 'PENDING'}" class="badge bg-secondary">Pending</span>
+                                            </td>
+                                            <td class="text-muted small" th:text="${#temporals.format(prompt.createdDate, 'yyyy-MM-dd HH:mm')}">Date</td>
+                                            <td>
+                                                <div class="btn-group btn-group-sm">
+                                                    <a th:href="@{/prompts/view/{id}(id=${prompt.id})}" class="btn btn-outline-primary" title="View">
+                                                        <i class="bi bi-eye"></i>
+                                                    </a>
+                                                    <a th:href="@{/prompts/edit/{id}(id=${prompt.id})}" class="btn btn-outline-warning" title="Edit">
+                                                        <i class="bi bi-pencil"></i>
+                                                    </a>
+                                                    <a th:href="@{/prompts/delete/{id}(id=${prompt.id})}" class="btn btn-outline-danger" title="Delete"
+                                                       onclick="return confirm('Are you sure you want to delete this prompt?')">
+                                                        <i class="bi bi-trash"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div th:if="${totalPages > 1}" class="d-flex justify-content-between align-items-center mt-4">
+                    <small class="text-muted">
+                        Showing page <span th:text="${currentPage + 1}">1</span> of <span th:text="${totalPages}">1</span>
+                        (<span th:text="${totalItems}">0</span> total items)
+                    </small>
+                    <nav>
+                        <ul class="pagination pagination-sm mb-0">
+                            <li class="page-item" th:classappend="${currentPage == 0} ? 'disabled'">
+                                <a class="page-link" th:href="@{/prompts(page=${currentPage - 1}, size=10, sortField=${sortField}, sortDir=${sortDir}, keyword=${keyword})}">Previous</a>
+                            </li>
+                            <li class="page-item" th:each="i : ${#numbers.sequence(0, totalPages - 1)}" th:classappend="${i == currentPage} ? 'active'">
+                                <a class="page-link" th:href="@{/prompts(page=${i}, size=10, sortField=${sortField}, sortDir=${sortDir}, keyword=${keyword})}" th:text="${i + 1}">1</a>
+                            </li>
+                            <li class="page-item" th:classappend="${currentPage >= totalPages - 1} ? 'disabled'">
+                                <a class="page-link" th:href="@{/prompts(page=${currentPage + 1}, size=10, sortField=${sortField}, sortDir=${sortDir}, keyword=${keyword})}">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script th:src="@{/js/main.js}"></script>
+</body>
+</html>
+

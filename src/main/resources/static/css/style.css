@@ -1,0 +1,307 @@
+/* ============================================================
+   AI Prompt Governance System - Custom Styles
+   ============================================================ */
+
+/* ============================================================
+   Global Styles
+   ============================================================ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fc;
+    overflow-x: hidden;
+}
+
+/* ============================================================
+   Sidebar Styles
+   ============================================================ */
+#wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #2c3e50 0%, #1a252f 100%);
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.sidebar .sidebar-header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+    border-left: 3px solid transparent;
+}
+
+.sidebar .nav-link:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border-left-color: #3498db;
+}
+
+.sidebar .nav-link i {
+    width: 20px;
+    text-align: center;
+}
+
+/* ============================================================
+   Page Content Styles
+   ============================================================ */
+#page-content-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* ============================================================
+   Stat Cards (Dashboard)
+   ============================================================ */
+.stat-card {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: default;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.stat-card .stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    font-size: 1.5rem;
+}
+
+.stat-card-total .stat-icon {
+    background: rgba(52, 152, 219, 0.1);
+    color: #3498db;
+}
+
+.stat-card-safe .stat-icon {
+    background: rgba(46, 204, 113, 0.1);
+    color: #2ecc71;
+}
+
+.stat-card-risk .stat-icon {
+    background: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+}
+
+.stat-card-improved .stat-icon {
+    background: rgba(155, 89, 182, 0.1);
+    color: #9b59b6;
+}
+
+/* ============================================================
+   Card Styles
+   ============================================================ */
+.card {
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 10px 10px 0 0 !important;
+}
+
+/* ============================================================
+   Form Styles
+   ============================================================ */
+.form-control:focus,
+.form-select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.15);
+}
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* ============================================================
+   Button Styles
+   ============================================================ */
+.btn {
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2980b9, #2471a3);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    border: none;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #27ae60, #1e8449);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);
+}
+
+/* ============================================================
+   Table Styles
+   ============================================================ */
+.table th {
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6c757d;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.03);
+}
+
+/* ============================================================
+   Badge Styles
+   ============================================================ */
+.badge {
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+/* ============================================================
+   Alert Styles
+   ============================================================ */
+.alert {
+    border-radius: 10px;
+    border: none;
+}
+
+/* ============================================================
+   Login/Register Page Styles
+   ============================================================ */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    min-height: 100vh;
+}
+
+/* ============================================================
+   Pagination Styles
+   ============================================================ */
+.pagination .page-link {
+    border-radius: 8px;
+    margin: 0 2px;
+    color: #3498db;
+    border: 1px solid #dee2e6;
+}
+
+.pagination .page-item.active .page-link {
+    background: #3498db;
+    border-color: #3498db;
+}
+
+/* ============================================================
+   Profile Avatar
+   ============================================================ */
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* ============================================================
+   Pre (Code) Block Styles
+   ============================================================ */
+pre {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* ============================================================
+   Responsive Styles
+   ============================================================ */
+@media (max-width: 768px) {
+    .sidebar {
+        min-width: 0;
+        max-width: 0;
+        overflow: hidden;
+    }
+
+    .sidebar.active {
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    #page-content-wrapper {
+        min-width: 100%;
+    }
+}
+
+/* ============================================================
+   Custom Scrollbar
+   ============================================================ */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+

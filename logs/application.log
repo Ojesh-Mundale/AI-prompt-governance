@@ -1,0 +1,39 @@
+2026-07-30 17:37:27 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 17:37:27 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 17:37:27 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-30 17:37:27 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-30 17:37:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 17:37:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 84 ms. Found 3 JPA repository interfaces.
+2026-07-30 17:37:30 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 17:37:30 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 17:37:30 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 17:37:30 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 17:37:30 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2493 ms
+2026-07-30 17:37:30 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 17:37:30 INFO  o.h.Version:44 - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-07-30 17:37:30 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 17:37:31 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 17:37:31 INFO  c.z.h.HikariDataSource:110 - HikariPool-1 - Starting...
+2026-07-30 17:37:31 INFO  c.z.h.p.HikariPool:565 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4861ca65
+2026-07-30 17:37:31 INFO  c.z.h.HikariDataSource:123 - HikariPool-1 - Start completed.
+2026-07-30 17:37:31 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 17:37:33 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 17:37:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 17:37:33 INFO  o.s.d.j.r.q.QueryEnhancerFactory:49 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-30 17:37:34 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 17:37:34 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2dcf6a63, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a511aeb, org.springframework.security.web.context.SecurityContextHolderFilter@71db483f, org.springframework.security.web.header.HeaderWriterFilter@e3f9712, org.springframework.web.filter.CorsFilter@316519dc, org.springframework.security.web.authentication.logout.LogoutFilter@668fb28f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@57e3838e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3bfcc530, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38a02107, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f29c056, org.springframework.security.web.access.ExceptionTranslationFilter@5a17a560, org.springframework.security.web.access.intercept.AuthorizationFilter@1969c41d]
+2026-07-30 17:37:35 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 17:37:35 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 17:37:35 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 8.298 seconds (process running for 8.949)
+2026-07-30 17:37:58 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-30 17:37:58 INFO  o.s.w.s.DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2026-07-30 17:37:58 INFO  o.s.w.s.DispatcherServlet:554 - Completed initialization in 2 ms
+2026-07-30 17:37:58 WARN  o.s.w.s.h.HandlerMappingIntrospector:454 - Cache miss for REQUEST dispatch to '/' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-07-30 17:37:58 WARN  o.s.w.s.h.HandlerMappingIntrospector:454 - Cache miss for REQUEST dispatch to '/' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-07-30 17:37:58 WARN  o.a.c.u.SessionIdGeneratorBase:173 - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [101] milliseconds.
+2026-07-30 17:38:06 WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor:385 - [THYMELEAF][http-nio-8080-exec-6][dashboard] Deprecated unwrapped fragment expression "fragments/layout :: sidebar" found in template dashboard, line 17, col 14. Please use the complete syntax of fragment expressions instead ("~{fragments/layout :: sidebar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-07-30 17:38:07 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:227 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-07-30 17:38:10 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:227 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-07-30 17:38:18 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:227 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-07-30 17:38:25 ERROR c.a.s.AiImproverServiceImpl:42 - Failed to call Gemini API: 404 Not Found: "{<EOL>  "error": {<EOL>    "code": 404,<EOL>    "message": "models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.",<EOL>    "status": "NOT_FOUND"<EOL>  }<EOL>}<EOL>"
+2026-07-30 17:38:25 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:227 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
