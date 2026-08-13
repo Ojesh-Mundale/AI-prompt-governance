@@ -16,10 +16,13 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Implementation of PromptService interface.
  * Handles all prompt management, risk analysis, and AI improvement operations.
+ * Implements enterprise-grade secret masking: original prompts are scanned for
+ * sensitive data and masked before being sent to the AI (Ollama).
  */
 @Service
 @Transactional
@@ -127,8 +130,8 @@ public class PromptServiceImpl implements PromptService {
         Prompt prompt = promptRepository.findById(promptId)
             .orElseThrow(() -> new RuntimeException("Prompt not found with id: " + promptId));
 
-        // Run risk analysis using utility
-        RiskAnalyzerUtil.AnalysisResult result = RiskAnalyzerUtil.analyze(prompt.getPromptText());
+        // Run risk analysis AND masking using the enhanced utility
+        RiskAnalyzerUtil.AnalysisResult result = RiskAnalyzerUtil.analyzeAndMask(prompt.getPromptText());
 
         // Create or update analysis
         Analysis analysis;
@@ -140,11 +143,18 @@ public class PromptServiceImpl implements PromptService {
 
         analysis.setRiskLevel(result.getRiskLevel());
         analysis.setReason(result.getReason());
+        analysis.setMaskedPrompt(result.getMaskedPrompt());
+        analysis.setDetectedSecretTypes(formatDetectedItems(result.getDetectedItems()));
         analysis.setAnalyzedDate(LocalDateTime.now());
         analysis.setPrompt(prompt);
 
         // Update prompt status based on risk level
-        prompt.setStatus(result.getRiskLevel().toUpperCase());
+        String status = result.getRiskLevel().toUpperCase();
+        // Normalize: if "SAFE" store as "PENDING" to maintain existing UI badge logic
+        if ("SAFE".equals(status)) {
+            status = "PENDING";
+        }
+        prompt.setStatus(status);
 
         promptRepository.save(prompt);
         return analysisRepository.save(analysis);
@@ -155,17 +165,52 @@ public class PromptServiceImpl implements PromptService {
         Prompt prompt = promptRepository.findById(promptId)
             .orElseThrow(() -> new RuntimeException("Prompt not found with id: " + promptId));
 
-        // Get improved prompt from AI service
-        String improvedPrompt = aiImproverService.improvePrompt(prompt.getPromptText());
+        // Step 1: Analyze and mask the original prompt for secrets
+        RiskAnalyzerUtil.AnalysisResult result = RiskAnalyzerUtil.analyzeAndMask(prompt.getPromptText());
 
-        // Update the analysis with improved prompt
-        Analysis analysis = analysisRepository.findByPrompt(prompt).orElse(null);
-        if (analysis != null) {
-            analysis.setImprovedPrompt(improvedPrompt);
-            analysisRepository.save(analysis);
+        // Step 2: Use the MASKED prompt to send to Ollama — secrets are never revealed
+        String maskedPrompt = result.getMaskedPrompt();
+        String improvedPrompt = aiImproverService.improvePrompt(maskedPrompt);
+
+        // Step 3: Save analysis with all relevant data
+        Analysis analysis;
+        if (analysisRepository.existsByPrompt(prompt)) {
+            analysis = analysisRepository.findByPrompt(prompt).orElse(new Analysis());
+        } else {
+            analysis = new Analysis();
         }
 
+        analysis.setRiskLevel(result.getRiskLevel());
+        analysis.setReason(result.getReason());
+        analysis.setMaskedPrompt(maskedPrompt);
+        analysis.setDetectedSecretTypes(formatDetectedItems(result.getDetectedItems()));
+        analysis.setImprovedPrompt(improvedPrompt);
+        analysis.setAnalyzedDate(LocalDateTime.now());
+        analysis.setPrompt(prompt);
+
+        // Update prompt status based on risk level
+        String status = result.getRiskLevel().toUpperCase();
+        if ("SAFE".equals(status)) {
+            status = "PENDING";
+        }
+        prompt.setStatus(status);
+        promptRepository.save(prompt);
+        analysisRepository.save(analysis);
+
         return improvedPrompt;
+    }
+
+    /**
+     * Formats detected items into a comma-separated string of secret types.
+     * Example: "GitHub Token, Private Key, Database URL"
+     */
+    private String formatDetectedItems(List<RiskAnalyzerUtil.DetectedItem> items) {
+        if (items == null || items.isEmpty()) {
+            return "";
+        }
+        return items.stream()
+                .map(RiskAnalyzerUtil.DetectedItem::getType)
+                .collect(Collectors.joining(", "));
     }
 }
 

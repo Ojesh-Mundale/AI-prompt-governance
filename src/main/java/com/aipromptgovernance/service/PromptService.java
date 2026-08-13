@@ -47,7 +47,7 @@ public interface PromptService {
     Analysis analyzePrompt(Long promptId);
 
     /**
-     * Improve prompt using AI (Gemini API).
+* Improve prompt using AI (Ollama API).
      */
     String improvePrompt(Long promptId);
 }

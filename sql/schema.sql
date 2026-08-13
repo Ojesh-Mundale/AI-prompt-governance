@@ -51,6 +51,8 @@ CREATE TABLE IF NOT EXISTS analysis (
     reason TEXT,
     analyzed_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     improved_prompt TEXT,
+    masked_prompt TEXT,
+    detected_secret_types TEXT,
     prompt_id BIGINT NOT NULL UNIQUE,
     INDEX idx_analysis_prompt_id (prompt_id),
     INDEX idx_analysis_risk_level (risk_level),

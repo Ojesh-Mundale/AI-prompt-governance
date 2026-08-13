@@ -84,7 +84,7 @@
                             </div>
                         </div>
 
-                        <!-- Analysis Result -->
+<!-- Analysis Result -->
                         <div th:if="${analysis != null}" class="card border-0 shadow-sm">
                             <div class="card-header bg-white py-3">
                                 <h5 class="mb-0"><i class="bi bi-shield-check me-2"></i>Risk Analysis Result</h5>
@@ -93,9 +93,9 @@
                                 <div class="row g-3">
                                     <div class="col-md-4">
                                         <div class="p-3 rounded text-center"
-                                             th:classappend="${analysis.riskLevel == 'Safe' ? 'bg-success bg-opacity-10' : (analysis.riskLevel == 'Medium' ? 'bg-warning bg-opacity-10' : 'bg-danger bg-opacity-10')}">
+                                             th:classappend="${analysis.riskLevel == 'SAFE' ? 'bg-success bg-opacity-10' : (analysis.riskLevel == 'MEDIUM' ? 'bg-warning bg-opacity-10' : 'bg-danger bg-opacity-10')}">
                                             <h3 th:text="${analysis.riskLevel}"
-                                                th:classappend="${analysis.riskLevel == 'Safe' ? 'text-success' : (analysis.riskLevel == 'Medium' ? 'text-warning' : 'text-danger')}"
+                                                th:classappend="${analysis.riskLevel == 'SAFE' ? 'text-success' : (analysis.riskLevel == 'MEDIUM' ? 'text-warning' : 'text-danger')}"
                                                 class="mb-0">Risk Level</h3>
                                             <small class="text-muted">Risk Level</small>
                                         </div>
@@ -107,6 +107,24 @@
                                             Analyzed on: <span th:text="${#temporals.format(analysis.analyzedDate, 'yyyy-MM-dd HH:mm')}">Date</span>
                                         </small>
                                     </div>
+                                </div>
+
+                                <!-- Detected Secrets -->
+                                <div th:if="${analysis.detectedSecretTypes != null and !analysis.detectedSecretTypes.isEmpty()}" class="mt-3 p-3 bg-danger bg-opacity-10 rounded">
+                                    <h6 class="text-danger"><i class="bi bi-exclamation-triangle me-1"></i>Detected Secrets</h6>
+                                    <ul class="mb-0" th:each="secret : ${#strings.listSplit(analysis.detectedSecretTypes, ', ')}">
+                                        <li><span th:text="${secret}">Secret Type</span></li>
+                                    </ul>
+                                </div>
+                                <div th:if="${analysis.detectedSecretTypes == null or analysis.detectedSecretTypes.isEmpty()}" class="mt-3 p-3 bg-success bg-opacity-10 rounded">
+                                    <h6 class="text-success"><i class="bi bi-check-circle me-1"></i>No Secrets Detected</h6>
+                                    <p class="mb-0 small text-muted">No sensitive information was found in this prompt.</p>
+                                </div>
+
+                                <!-- Masked Prompt -->
+                                <div th:if="${analysis.maskedPrompt != null}" class="mt-3 p-3 bg-info bg-opacity-10 rounded">
+                                    <h6 class="text-info"><i class="bi bi-eye-slash me-1"></i>Masked Prompt (Sent to AI)</h6>
+                                    <pre class="mb-0" style="white-space: pre-wrap; font-family: inherit; font-size: 0.9em;" th:text="${analysis.maskedPrompt}">Masked prompt here</pre>
                                 </div>
 
                                 <!-- Improved Prompt from DB -->

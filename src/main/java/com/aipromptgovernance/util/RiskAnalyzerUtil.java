@@ -1,146 +1,283 @@
 package com.aipromptgovernance.util;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Utility class for analyzing prompts for sensitive information.
- * Uses Java Regex patterns to detect various types of sensitive data.
+ * Enterprise-grade utility for detecting and masking sensitive information in prompts.
+ * Scans text using regex patterns, replaces secrets with placeholders,
+ * and returns risk assessment with detected secret types.
  */
 public class RiskAnalyzerUtil {
 
-    // Regex patterns for detecting sensitive information
-    private static final Pattern EMAIL_PATTERN =
-        Pattern.compile("\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}\\b");
+    // ============================================================
+    // Secret Pattern Definitions (name -> (regex, placeholder, risk))
+    // ============================================================
 
-    private static final Pattern PHONE_PATTERN =
-        Pattern.compile("\\b(\\+?\\d{1,3}[-.]?)?\\(?\\d{3}\\)?[-.]?\\d{3}[-.]?\\d{4}\\b");
+    private static final List<SecretPattern> SECRET_PATTERNS = List.of(
+        // --- HIGH risk secrets ---
+        new SecretPattern(
+            "GitHub Token",
+            "(?i)(ghp_|gho_|ghu_|ghs_|ghr_)[A-Za-z0-9_]{36,}",
+            "<GITHUB_TOKEN>",
+            "HIGH"
+        ),
+        new SecretPattern(
+            "OpenAI API Key",
+            "(?i)(sk-[A-Za-z0-9]{20,})",
+            "<OPENAI_API_KEY>",
+            "HIGH"
+        ),
+        new SecretPattern(
+            "AWS Access Key",
+            "(?i)(AKIA[A-Z0-9]{16})",
+            "<AWS_ACCESS_KEY>",
+            "HIGH"
+        ),
+        new SecretPattern(
+            "AWS Secret Key",
+            "(?i)((?![A-Za-z0-9/+=])[A-Za-z0-9/+=]{40}(?![A-Za-z0-9/+=]))",
+            "<AWS_SECRET_KEY>",
+            "HIGH"
+        ),
+        new SecretPattern(
+            "JWT Token",
+            "\\beyJ[A-Za-z0-9_-]+\\.[A-Za-z0-9_-]+\\.[A-Za-z0-9_-]+\\b",
+            "<JWT_TOKEN>",
+            "HIGH"
+        ),
+        new SecretPattern(
+            "Bearer Token",
+            "(?i)(bearer\\s+)[A-Za-z0-9_\\-.:=+/]{20,}",
+            "<BEARER_TOKEN>",
+            "HIGH"
+        ),
+        new SecretPattern(
+            "Private Key",
+            "-----BEGIN[\\sA-Z]*PRIVATE KEY-----",
+            "<PRIVATE_KEY>",
+            "HIGH"
+        ),
+        new SecretPattern(
+            "SSH Private Key",
+            "-----BEGIN[\\sA-Z]*RSA[\\sA-Z]*PRIVATE KEY-----",
+            "<SSH_PRIVATE_KEY>",
+            "HIGH"
+        ),
+        new SecretPattern(
+            "Database URL",
+            "(?i)((?:jdbc|mysql|postgresql|mongodb|redis)://[^\\s\"'<>]+)",
+            "<DATABASE_URL>",
+            "HIGH"
+        ),
+        new SecretPattern(
+            "Password",
+            "(?i)(password|passwd|pwd)\\s*[:=]\\s*\\S{4,}",
+            "<PASSWORD>",
+            "HIGH"
+        ),
+        new SecretPattern(
+            "Connection String",
+            "(?i)(connection\\s*(?:string|str)|connstr)\\s*[:=]\\s*[^\\s\"'<>]{10,}",
+            "<CONNECTION_STRING>",
+            "HIGH"
+        ),
 
-    private static final Pattern PASSWORD_PATTERN =
-        Pattern.compile("(?i)\\b(password|passwd|pwd)\\s*[:=]\\s*\\S+\\b");
-
-    private static final Pattern API_KEY_PATTERN =
-        Pattern.compile("(?i)\\b(api[_-]?key|apikey|api[_-]?secret)\\s*[:=]\\s*\\S+\\b");
-
-    private static final Pattern CREDIT_CARD_PATTERN =
-        Pattern.compile("\\b(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|6(?:011|5[0-9]{2})[0-9]{12})\\b");
-
-    private static final Pattern PAN_PATTERN =
-        Pattern.compile("\\b[A-Z]{5}[0-9]{4}[A-Z]{1}\\b");
-
-    private static final Pattern AADHAAR_PATTERN =
-        Pattern.compile("\\b[2-9]{1}[0-9]{11}\\b");
-
-    private static final Pattern SECRET_KEY_PATTERN =
-        Pattern.compile("(?i)\\b(secret|secret[_-]?key|private[_-]?key)\\s*[:=]\\s*\\S+\\b");
+        // --- MEDIUM risk secrets ---
+        new SecretPattern(
+            "Email Address",
+            "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}\\b",
+            "<EMAIL>",
+            "MEDIUM"
+        ),
+        new SecretPattern(
+            "Phone Number",
+            "\\b(\\+?\\d{1,3}[-.]?)?\\(?\\d{3}\\)?[-.]?\\d{3}[-.]?\\d{4}\\b",
+            "<PHONE_NUMBER>",
+            "MEDIUM"
+        ),
+        new SecretPattern(
+            "IP Address",
+            "\\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b",
+            "<IP_ADDRESS>",
+            "MEDIUM"
+        ),
+        new SecretPattern(
+            "Internal URL",
+            "(?i)(https?://(?:localhost|192\\.168\\.\\d{1,3}\\.\\d{1,3}|10\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}|172\\.(?:1[6-9]|2\\d|3[01])\\.\\d{1,3}\\.\\d{1,3}|127\\.0\\.0\\.1)[^\\s\"'<>]*)",
+            "<INTERNAL_URL>",
+            "MEDIUM"
+        )
+    );
 
     /**
-     * Represents a detected sensitive item with its type and description.
+     * Holds regex pattern, placeholder name, and risk level for a secret type.
+     */
+    private static record SecretPattern(String name, String regex, String placeholder, String riskLevel) {
+        Pattern compiledPattern() {
+            return Pattern.compile(regex);
+        }
+    }
+
+    /**
+     * Represents a detected sensitive item with its type and risk level.
      */
     public static class DetectedItem {
         private final String type;
+        private final String riskLevel;
         private final String description;
 
-        public DetectedItem(String type, String description) {
+        public DetectedItem(String type, String riskLevel, String description) {
             this.type = type;
+            this.riskLevel = riskLevel;
             this.description = description;
         }
 
         public String getType() { return type; }
+        public String getRiskLevel() { return riskLevel; }
         public String getDescription() { return description; }
     }
 
     /**
-     * Result of a risk analysis containing risk level, reason, and detected items.
+     * Result of a risk analysis containing risk level, reason,
+     * detected items, and the masked prompt text.
      */
     public static class AnalysisResult {
         private final String riskLevel;
         private final String reason;
         private final List<DetectedItem> detectedItems;
+        private final String maskedPrompt;
 
-        public AnalysisResult(String riskLevel, String reason, List<DetectedItem> detectedItems) {
+        public AnalysisResult(String riskLevel, String reason,
+                              List<DetectedItem> detectedItems,
+                              String maskedPrompt) {
             this.riskLevel = riskLevel;
             this.reason = reason;
             this.detectedItems = detectedItems;
+            this.maskedPrompt = maskedPrompt;
         }
 
         public String getRiskLevel() { return riskLevel; }
         public String getReason() { return reason; }
         public List<DetectedItem> getDetectedItems() { return detectedItems; }
+        public String getMaskedPrompt() { return maskedPrompt; }
     }
 
     /**
-     * Analyzes the given prompt text for sensitive information.
+     * Analyzes the given text for sensitive information AND returns a masked version
+     * where all secrets are replaced with placeholders.
      *
-     * @param promptText the prompt text to analyze
-     * @return AnalysisResult containing risk level, reason, and detected items
+     * @param text the input text to analyze and mask
+     * @return AnalysisResult containing risk level, reason, detected items, and masked prompt
      */
-    public static AnalysisResult analyze(String promptText) {
+    public static AnalysisResult analyzeAndMask(String text) {
+        if (text == null || text.isEmpty()) {
+            return new AnalysisResult("SAFE", "No content to analyze.",
+                    List.of(), text);
+        }
+
         List<DetectedItem> detectedItems = new ArrayList<>();
+        StringBuilder maskedText = new StringBuilder(text);
 
-        // Check for email addresses
-        if (EMAIL_PATTERN.matcher(promptText).find()) {
-            detectedItems.add(new DetectedItem("Email Address", "Prompt contains email address(es)"));
+        // Track unique secret types detected
+        Map<String, String> uniqueTypes = new LinkedHashMap<>();
+
+        for (SecretPattern sp : SECRET_PATTERNS) {
+            Pattern pattern = sp.compiledPattern();
+            Matcher matcher = pattern.matcher(maskedText.toString());
+
+            while (matcher.find()) {
+                String match = matcher.group();
+                // Skip IP-like numbers that are too short (e.g. version numbers)
+                if ("IP Address".equals(sp.name) && match.startsWith("0")) {
+                    continue;
+                }
+                if (!uniqueTypes.containsKey(sp.name)) {
+                    uniqueTypes.put(sp.name, sp.riskLevel);
+                    String desc = switch (sp.name) {
+                        case "GitHub Token" -> "Prompt contains GitHub access token(s)";
+                        case "OpenAI API Key" -> "Prompt contains OpenAI API key(s)";
+                        case "AWS Access Key" -> "Prompt contains AWS access key(s)";
+                        case "AWS Secret Key" -> "Prompt contains AWS secret key(s)";
+                        case "JWT Token" -> "Prompt contains JWT token(s)";
+                        case "Bearer Token" -> "Prompt contains Bearer authentication token(s)";
+                        case "Private Key" -> "Prompt contains private key(s)";
+                        case "SSH Private Key" -> "Prompt contains SSH private key(s)";
+                        case "Database URL" -> "Prompt contains database connection URL(s)";
+                        case "Password" -> "Prompt contains password(s)";
+                        case "Connection String" -> "Prompt contains connection string(s)";
+                        case "Email Address" -> "Prompt contains email address(es)";
+                        case "Phone Number" -> "Prompt contains phone number(s)";
+                        case "IP Address" -> "Prompt contains IP address(es)";
+                        case "Internal URL" -> "Prompt contains internal URL(s)";
+                        default -> "Prompt contains " + sp.name.toLowerCase() + "(s)";
+                    };
+                    detectedItems.add(new DetectedItem(sp.name, sp.riskLevel, desc));
+                }
+
+                // Replace the matched secret with placeholder
+                int start = matcher.start();
+                int end = matcher.end();
+                maskedText.replace(start, end, sp.placeholder);
+                // Reset matcher to scan from after the placeholder
+                matcher = pattern.matcher(maskedText.toString());
+            }
         }
 
-        // Check for phone numbers
-        if (PHONE_PATTERN.matcher(promptText).find()) {
-            detectedItems.add(new DetectedItem("Phone Number", "Prompt contains phone number(s)"));
-        }
-
-        // Check for passwords
-        if (PASSWORD_PATTERN.matcher(promptText).find()) {
-            detectedItems.add(new DetectedItem("Password", "Prompt may contain password(s)"));
-        }
-
-        // Check for API keys
-        if (API_KEY_PATTERN.matcher(promptText).find()) {
-            detectedItems.add(new DetectedItem("API Key", "Prompt contains API key(s) or API secret(s)"));
-        }
-
-        // Check for credit card numbers
-        if (CREDIT_CARD_PATTERN.matcher(promptText).find()) {
-            detectedItems.add(new DetectedItem("Credit Card Number", "Prompt contains credit card number(s)"));
-        }
-
-        // Check for PAN numbers (Indian tax ID)
-        if (PAN_PATTERN.matcher(promptText).find()) {
-            detectedItems.add(new DetectedItem("PAN Number", "Prompt contains PAN card number(s)"));
-        }
-
-        // Check for Aadhaar numbers (Indian ID)
-        if (AADHAAR_PATTERN.matcher(promptText).find()) {
-            detectedItems.add(new DetectedItem("Aadhaar Number", "Prompt contains Aadhaar number(s)"));
-        }
-
-        // Check for secret keys
-        if (SECRET_KEY_PATTERN.matcher(promptText).find()) {
-            detectedItems.add(new DetectedItem("Secret Key", "Prompt contains secret key(s)"));
-        }
-
-        // Determine risk level based on detected items
+        // Determine overall risk level
         String riskLevel;
         String reason;
+        boolean hasHigh = false;
+        boolean hasMedium = false;
 
-        if (detectedItems.isEmpty()) {
-            riskLevel = "Safe";
-            reason = "No sensitive information detected in the prompt.";
-        } else if (detectedItems.size() <= 2) {
-            riskLevel = "Medium";
-            reason = "Sensitive information detected: " + formatDetectedItems(detectedItems);
-        } else {
-            riskLevel = "High";
-            reason = "Multiple sensitive information detected: " + formatDetectedItems(detectedItems);
+        for (DetectedItem item : detectedItems) {
+            if ("HIGH".equals(item.getRiskLevel())) {
+                hasHigh = true;
+            } else if ("MEDIUM".equals(item.getRiskLevel())) {
+                hasMedium = true;
+            }
         }
 
-        return new AnalysisResult(riskLevel, reason, detectedItems);
+        if (detectedItems.isEmpty()) {
+            riskLevel = "SAFE";
+            reason = "No sensitive information detected in the prompt.";
+        } else if (hasHigh) {
+            riskLevel = "HIGH";
+            reason = "High risk sensitive information detected: " + formatDetectedTypes(detectedItems);
+        } else if (hasMedium) {
+            riskLevel = "MEDIUM";
+            reason = "Medium risk information detected: " + formatDetectedTypes(detectedItems);
+        } else {
+            riskLevel = "SAFE";
+            reason = "No sensitive information detected.";
+        }
+
+        return new AnalysisResult(riskLevel, reason, detectedItems, maskedText.toString());
     }
 
     /**
-     * Formats detected items into a readable string.
+     * Legacy analyze method - performs analysis without masking.
+     * Kept for backward compatibility but delegates to analyzeAndMask.
      */
-    private static String formatDetectedItems(List<DetectedItem> items) {
+    public static AnalysisResult analyze(String promptText) {
+        AnalysisResult result = analyzeAndMask(promptText);
+        // Return result with original text as maskedPrompt for backward compat
+        return new AnalysisResult(
+                result.getRiskLevel(),
+                result.getReason(),
+                result.getDetectedItems(),
+                promptText
+        );
+    }
+
+    /**
+     * Formats detected items into a readable string of types.
+     */
+    private static String formatDetectedTypes(List<DetectedItem> items) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < items.size(); i++) {
             if (i > 0) {

@@ -34,6 +34,12 @@ public class Analysis {
     @Column(columnDefinition = "TEXT")
     private String improvedPrompt;
 
+    @Column(name = "masked_prompt", columnDefinition = "TEXT")
+    private String maskedPrompt;
+
+    @Column(name = "detected_secret_types", columnDefinition = "TEXT")
+    private String detectedSecretTypes;
+
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "prompt_id", nullable = false)
     private Prompt prompt;

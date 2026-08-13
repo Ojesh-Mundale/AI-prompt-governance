@@ -2,7 +2,7 @@ package com.aipromptgovernance.service;
 
 /**
  * Service interface for AI prompt improvement.
- * Implement this interface to integrate with any AI API (e.g., Gemini, ChatGPT).
+ * Implement this interface to integrate with any AI API (e.g., Ollama, ChatGPT).
  * Default implementation provides a placeholder until API key is configured.
  */
 public interface AiImproverService {

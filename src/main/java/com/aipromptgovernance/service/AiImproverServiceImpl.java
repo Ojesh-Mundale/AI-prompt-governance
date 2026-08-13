@@ -1,87 +1,92 @@
 package com.aipromptgovernance.service;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
  * Implementation of AiImproverService.
- * Integrates with Google Gemini API when API key is configured.
- * Falls back to a placeholder response if API key is not set.
+ * Integrates with Ollama (Llama 3) to improve AI prompts.
  */
 @Service
 public class AiImproverServiceImpl implements AiImproverService {
 
     private static final Logger LOGGER = Logger.getLogger(AiImproverServiceImpl.class.getName());
 
-    @Value("${gemini.api.key:PLACEHOLDER_API_KEY}")
-    private String apiKey;
+    @Value("${ollama.api.url}")
+    private String ollamaUrl;
 
-    @Value("${gemini.api.url:https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent}")
-    private String apiUrl;
+    @Value("${ollama.api.model}")
+    private String model;
 
     private final RestTemplate restTemplate;
+    private final ObjectMapper objectMapper;
 
     public AiImproverServiceImpl() {
         this.restTemplate = new RestTemplate();
+        this.objectMapper = new ObjectMapper();
     }
 
     @Override
     public String improvePrompt(String promptText) {
-        // Check if API key is configured (not placeholder)
-        if (apiKey == null || apiKey.isEmpty() || "PLACEHOLDER_API_KEY".equals(apiKey)) {
-            LOGGER.warning("Gemini API key not configured. Using placeholder improvement.");
-            return getPlaceholderImprovement(promptText);
-        }
-
         try {
-            return callGeminiApi(promptText);
+            return callOllamaApi(promptText);
         } catch (Exception e) {
-            LOGGER.severe("Failed to call Gemini API: " + e.getMessage());
+            LOGGER.log(Level.SEVERE, "Failed to call Ollama API: " + e.getMessage(), e);
             return getPlaceholderImprovement(promptText);
         }
     }
 
     /**
-     * Calls the Google Gemini API to improve the prompt.
-     * Implementation details for Gemini API integration.
+     * Calls the Ollama API to improve the prompt using the configured model.
      */
-    private String callGeminiApi(String promptText) {
-        // Construct the request payload for Gemini API
+    private String callOllamaApi(String promptText) {
+        String systemPrompt = "Improve this AI prompt without changing its meaning. Make it clearer, more detailed and structured.";
+        String fullPrompt = systemPrompt + "\n\nOriginal Prompt:\n" + promptText;
+
+        String escapedPrompt = fullPrompt
+                .replace("\\", "\\\\")
+                .replace("\"", "\\\"")
+                .replace("\n", "\\n")
+                .replace("\r", "\\r")
+                .replace("\t", "\\t");
+
         String requestBody = String.format(
-            "{\"contents\":[{\"parts\":[{\"text\":\"Improve this AI prompt without changing its meaning. Make it clearer, more detailed and structured.\\n\\nOriginal Prompt:\\n%s\"}]}]}",
-            promptText.replace("\"", "\\\"").replace("\n", "\\n")
+                "{\"model\":\"%s\",\"prompt\":\"%s\",\"stream\":false}",
+                model,
+                escapedPrompt
         );
 
-        String url = apiUrl + "?key=" + apiKey;
+        LOGGER.info("Calling Ollama API at: " + ollamaUrl + " with model: " + model);
 
-        // Make the API call
-        String response = restTemplate.postForObject(url, requestBody, String.class);
+        String response = restTemplate.postForObject(ollamaUrl, requestBody, String.class);
 
-        // Parse and return the improved text from response
-        if (response != null && response.contains("\"text\"")) {
-            // Basic parsing of Gemini response
-            int textStart = response.indexOf("\"text\"") + 7;
-            textStart = response.indexOf("\"", textStart) + 1;
-            int textEnd = response.indexOf("\"", textStart);
-            if (textStart > 0 && textEnd > textStart) {
-                return response.substring(textStart, textEnd)
-                    .replace("\\n", "\n")
-                    .replace("\\\"", "\"");
+        if (response != null) {
+            try {
+                JsonNode root = objectMapper.readTree(response);
+                JsonNode responseField = root.get("response");
+                if (responseField != null && !responseField.isNull()) {
+                    return responseField.asText();
+                }
+            } catch (Exception e) {
+                LOGGER.log(Level.WARNING, "Failed to parse Ollama response JSON", e);
             }
         }
 
+        LOGGER.warning("Ollama returned empty or unparseable response. Using placeholder.");
         return getPlaceholderImprovement(promptText);
     }
 
     /**
-     * Provides a placeholder improvement when API is not available.
-     * This method can be replaced with actual AI API integration later.
+     * Provides a placeholder improvement when Ollama API is not available.
      */
     private String getPlaceholderImprovement(String originalPrompt) {
-        return "**Improved Version (Placeholder - Configure Gemini API key for AI-powered improvement)**\n\n"
+        return "**Improved Version (Placeholder - Ollama API unavailable)**\n\n"
              + "I understand you want me to help with the following prompt. Let me restructure and clarify it:\n\n"
              + "---\n\n"
              + "**Original Prompt:**\n" + originalPrompt + "\n\n"
@@ -93,7 +98,6 @@ public class AiImproverServiceImpl implements AiImproverService {
              + "3. **Specific Requirements:** List any specific constraints or preferences.\n"
              + "4. **Expected Output Format:** Specify how you want the response structured.\n\n"
              + "---\n\n"
-             + "*Note: To enable real AI-powered improvements, please configure the 'gemini.api.key' property in application.properties with a valid Gemini API key.*";
+             + "*Note: To enable real AI-powered improvements, please ensure Ollama is running locally with the '" + model + "' model pulled.*";
     }
 }
-

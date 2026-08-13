@@ -37,3 +37,1091 @@
 2026-07-30 17:38:18 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:227 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
 2026-07-30 17:38:25 ERROR c.a.s.AiImproverServiceImpl:42 - Failed to call Gemini API: 404 Not Found: "{<EOL>  "error": {<EOL>    "code": 404,<EOL>    "message": "models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.",<EOL>    "status": "NOT_FOUND"<EOL>  }<EOL>}<EOL>"
 2026-07-30 17:38:25 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:227 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-07-30 17:48:36 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:227 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-07-30 17:52:10 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-30 17:52:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 17:52:10 INFO  c.z.h.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2026-07-30 17:52:10 INFO  c.z.h.HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2026-07-30 17:52:10 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 17:52:10 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 17:52:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 17:52:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 80 ms. Found 3 JPA repository interfaces.
+2026-07-30 17:52:11 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 17:52:12 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 17:52:12 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 17:52:12 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 17:52:12 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1474 ms
+2026-07-30 17:52:12 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 17:52:12 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 17:52:12 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 17:52:12 INFO  c.z.h.HikariDataSource:110 - HikariPool-2 - Starting...
+2026-07-30 17:52:12 INFO  c.z.h.p.HikariPool:565 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@254fca69
+2026-07-30 17:52:12 INFO  c.z.h.HikariDataSource:123 - HikariPool-2 - Start completed.
+2026-07-30 17:52:12 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 17:52:12 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 17:52:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 17:52:12 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 17:52:12 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b9b7705, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14abc8c7, org.springframework.security.web.context.SecurityContextHolderFilter@23c803a5, org.springframework.security.web.header.HeaderWriterFilter@2ba2f33c, org.springframework.web.filter.CorsFilter@3eacf855, org.springframework.security.web.authentication.logout.LogoutFilter@5ac1ec48, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7127c4f6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3182d29f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22c11e72, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71e38b02, org.springframework.security.web.access.ExceptionTranslationFilter@22c622c7, org.springframework.security.web.access.intercept.AuthorizationFilter@24d1cf88]
+2026-07-30 17:52:12 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 17:52:12 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 17:52:12 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 2.128 seconds (process running for 886.341)
+2026-07-30 17:52:12 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 17:52:14 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-30 17:52:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 17:52:14 INFO  c.z.h.HikariDataSource:350 - HikariPool-2 - Shutdown initiated...
+2026-07-30 17:52:14 INFO  c.z.h.HikariDataSource:352 - HikariPool-2 - Shutdown completed.
+2026-07-30 17:52:14 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 17:52:14 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 17:52:14 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 17:52:14 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2026-07-30 17:52:14 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 17:52:14 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 17:52:14 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 17:52:14 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 17:52:14 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 300 ms
+2026-07-30 17:52:14 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 17:52:14 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 17:52:14 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 17:52:14 INFO  c.z.h.HikariDataSource:110 - HikariPool-3 - Starting...
+2026-07-30 17:52:14 INFO  c.z.h.p.HikariPool:565 - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ae7788e
+2026-07-30 17:52:14 INFO  c.z.h.HikariDataSource:123 - HikariPool-3 - Start completed.
+2026-07-30 17:52:14 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 17:52:14 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 17:52:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 17:52:14 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 17:52:14 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@179e8b50, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@933f80, org.springframework.security.web.context.SecurityContextHolderFilter@1414b2e, org.springframework.security.web.header.HeaderWriterFilter@445438cc, org.springframework.web.filter.CorsFilter@286d27b2, org.springframework.security.web.authentication.logout.LogoutFilter@299410c4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e05ba64, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2659537a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4770f5fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b086e41, org.springframework.security.web.access.ExceptionTranslationFilter@2e19fa30, org.springframework.security.web.access.intercept.AuthorizationFilter@525ae7e]
+2026-07-30 17:52:14 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 17:52:14 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 17:52:14 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 0.785 seconds (process running for 888.691)
+2026-07-30 17:52:14 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 17:54:25 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-30 17:54:25 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 17:54:25 INFO  c.z.h.HikariDataSource:350 - HikariPool-3 - Shutdown initiated...
+2026-07-30 17:54:25 INFO  c.z.h.HikariDataSource:352 - HikariPool-3 - Shutdown completed.
+2026-07-30 17:54:25 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 17:54:25 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 17:54:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 17:54:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2026-07-30 17:54:26 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 17:54:26 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 17:54:26 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 17:54:26 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 17:54:26 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 570 ms
+2026-07-30 17:54:26 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 17:54:26 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 17:54:26 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 17:54:26 INFO  c.z.h.HikariDataSource:110 - HikariPool-4 - Starting...
+2026-07-30 17:54:26 INFO  c.z.h.p.HikariPool:565 - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d2d31fc
+2026-07-30 17:54:26 INFO  c.z.h.HikariDataSource:123 - HikariPool-4 - Start completed.
+2026-07-30 17:54:26 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 17:54:26 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 17:54:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 17:54:26 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 17:54:26 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@22d47118, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@757e048e, org.springframework.security.web.context.SecurityContextHolderFilter@491a9d26, org.springframework.security.web.header.HeaderWriterFilter@2ccedac7, org.springframework.web.filter.CorsFilter@6cdbb40d, org.springframework.security.web.authentication.logout.LogoutFilter@3b412243, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@60c81182, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@da5397b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c6d9db5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cbffc15, org.springframework.security.web.access.ExceptionTranslationFilter@de3cf6, org.springframework.security.web.access.intercept.AuthorizationFilter@522962be]
+2026-07-30 17:54:26 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 17:54:26 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 17:54:26 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 1.214 seconds (process running for 1020.393)
+2026-07-30 17:54:26 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 17:56:42 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-30 17:56:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 17:56:42 INFO  c.z.h.HikariDataSource:350 - HikariPool-4 - Shutdown initiated...
+2026-07-30 17:56:42 INFO  c.z.h.HikariDataSource:352 - HikariPool-4 - Shutdown completed.
+2026-07-30 17:56:42 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 17:56:42 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 17:56:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 17:56:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 59 ms. Found 3 JPA repository interfaces.
+2026-07-30 17:56:43 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 17:56:43 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 17:56:43 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 17:56:43 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 17:56:43 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 707 ms
+2026-07-30 17:56:43 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 17:56:43 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 17:56:43 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 17:56:43 INFO  c.z.h.HikariDataSource:110 - HikariPool-5 - Starting...
+2026-07-30 17:56:43 INFO  c.z.h.p.HikariPool:565 - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74904e72
+2026-07-30 17:56:43 INFO  c.z.h.HikariDataSource:123 - HikariPool-5 - Start completed.
+2026-07-30 17:56:43 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 17:56:43 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 17:56:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 17:56:43 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 17:56:43 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3c6eb43a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e9dcf2d, org.springframework.security.web.context.SecurityContextHolderFilter@53a323b9, org.springframework.security.web.header.HeaderWriterFilter@18fd2f17, org.springframework.web.filter.CorsFilter@2e27b2a8, org.springframework.security.web.authentication.logout.LogoutFilter@4460abcd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3a54945b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78f2d332, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f60e221, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@304f0d7b, org.springframework.security.web.access.ExceptionTranslationFilter@67cc1b26, org.springframework.security.web.access.intercept.AuthorizationFilter@7bab7620]
+2026-07-30 17:56:44 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 17:56:44 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 17:56:44 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 1.375 seconds (process running for 1157.78)
+2026-07-30 17:56:44 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 17:57:26 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-30 17:57:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 17:57:26 INFO  c.z.h.HikariDataSource:350 - HikariPool-5 - Shutdown initiated...
+2026-07-30 17:57:26 INFO  c.z.h.HikariDataSource:352 - HikariPool-5 - Shutdown completed.
+2026-07-30 17:57:26 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 17:57:26 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 17:57:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 17:57:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 16 ms. Found 3 JPA repository interfaces.
+2026-07-30 17:57:27 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 17:57:27 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 17:57:27 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 17:57:27 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 17:57:27 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 271 ms
+2026-07-30 17:57:27 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 17:57:27 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 17:57:27 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 17:57:27 INFO  c.z.h.HikariDataSource:110 - HikariPool-6 - Starting...
+2026-07-30 17:57:27 INFO  c.z.h.p.HikariPool:565 - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ecf790d
+2026-07-30 17:57:27 INFO  c.z.h.HikariDataSource:123 - HikariPool-6 - Start completed.
+2026-07-30 17:57:27 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 17:57:27 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 17:57:27 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 17:57:27 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 17:57:27 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@62aa69b0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c52d518, org.springframework.security.web.context.SecurityContextHolderFilter@7366e464, org.springframework.security.web.header.HeaderWriterFilter@798d8851, org.springframework.web.filter.CorsFilter@235e36de, org.springframework.security.web.authentication.logout.LogoutFilter@46daa20e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71f37f52, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@408695f3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1781ee44, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49bdd408, org.springframework.security.web.access.ExceptionTranslationFilter@33cc9394, org.springframework.security.web.access.intercept.AuthorizationFilter@2a6ca5e1]
+2026-07-30 17:57:27 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 17:57:27 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 17:57:27 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 1.022 seconds (process running for 1201.5)
+2026-07-30 17:57:27 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:02:10 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-30 18:02:10 INFO  o.s.w.s.DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2026-07-30 18:02:10 INFO  o.s.w.s.DispatcherServlet:554 - Completed initialization in 1 ms
+2026-07-30 18:02:10 WARN  o.s.w.s.h.HandlerMappingIntrospector:454 - Cache miss for REQUEST dispatch to '/prompts/view/2' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-07-30 18:02:10 WARN  o.s.w.s.h.HandlerMappingIntrospector:454 - Cache miss for REQUEST dispatch to '/prompts/view/2' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-07-30 18:02:11 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:227 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-07-30 18:02:12 INFO  c.a.s.AiImproverServiceImpl:65 - Calling Ollama API at: http://localhost:11434/api/generate  with model: llama3
+2026-07-30 18:03:53 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:227 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-07-30 18:23:41 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 4 class path changes (0 additions, 2 deletions, 2 modifications)
+2026-07-30 18:23:41 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:23:41 INFO  c.z.h.HikariDataSource:350 - HikariPool-6 - Shutdown initiated...
+2026-07-30 18:23:41 INFO  c.z.h.HikariDataSource:352 - HikariPool-6 - Shutdown completed.
+2026-07-30 18:23:41 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:23:41 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:23:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:23:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 118 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:23:44 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:23:44 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:23:44 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:23:44 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:23:44 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2747 ms
+2026-07-30 18:23:44 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:23:44 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:23:44 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:23:44 INFO  c.z.h.HikariDataSource:110 - HikariPool-7 - Starting...
+2026-07-30 18:23:44 INFO  c.z.h.p.HikariPool:565 - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27a1bca3
+2026-07-30 18:23:44 INFO  c.z.h.HikariDataSource:123 - HikariPool-7 - Start completed.
+2026-07-30 18:23:45 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:23:45 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:23:45 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:23:46 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:23:47 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2c791abe, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45d1aaea, org.springframework.security.web.context.SecurityContextHolderFilter@7f61a530, org.springframework.security.web.header.HeaderWriterFilter@3ada621d, org.springframework.web.filter.CorsFilter@6ea2328f, org.springframework.security.web.authentication.logout.LogoutFilter@1a0abcf9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@37e6091, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b848d3b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e812882, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ea8bd22, org.springframework.security.web.access.ExceptionTranslationFilter@1096a6d7, org.springframework.security.web.access.intercept.AuthorizationFilter@4c5cf097]
+2026-07-30 18:23:47 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:23:47 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:23:47 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 6.052 seconds (process running for 2781.361)
+2026-07-30 18:23:47 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:23:50 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2026-07-30 18:23:50 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:23:50 INFO  c.z.h.HikariDataSource:350 - HikariPool-7 - Shutdown initiated...
+2026-07-30 18:23:50 INFO  c.z.h.HikariDataSource:352 - HikariPool-7 - Shutdown completed.
+2026-07-30 18:23:50 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:23:50 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:23:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:23:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 86 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:23:54 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:23:54 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:23:54 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:23:54 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:23:54 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 3784 ms
+2026-07-30 18:23:55 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:23:55 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:23:55 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:23:55 INFO  c.z.h.HikariDataSource:110 - HikariPool-8 - Starting...
+2026-07-30 18:23:55 INFO  c.z.h.p.HikariPool:565 - HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53534be2
+2026-07-30 18:23:55 INFO  c.z.h.HikariDataSource:123 - HikariPool-8 - Start completed.
+2026-07-30 18:23:55 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:23:56 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:23:56 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:23:57 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:23:57 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@31b14, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@338d4795, org.springframework.security.web.context.SecurityContextHolderFilter@6dd20118, org.springframework.security.web.header.HeaderWriterFilter@316f77e5, org.springframework.web.filter.CorsFilter@6d9d38ea, org.springframework.security.web.authentication.logout.LogoutFilter@716d7fb5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a895f27, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@115c8e46, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4650e285, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3dbd3219, org.springframework.security.web.access.ExceptionTranslationFilter@79b5dddd, org.springframework.security.web.access.intercept.AuthorizationFilter@45337fb9]
+2026-07-30 18:23:58 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:23:58 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:23:58 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 7.6 seconds (process running for 2792.0)
+2026-07-30 18:23:58 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:24:00 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 3 class path changes (1 addition, 0 deletions, 2 modifications)
+2026-07-30 18:24:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:24:00 INFO  c.z.h.HikariDataSource:350 - HikariPool-8 - Shutdown initiated...
+2026-07-30 18:24:00 INFO  c.z.h.HikariDataSource:352 - HikariPool-8 - Shutdown completed.
+2026-07-30 18:24:00 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:24:00 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:24:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:24:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 107 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:24:03 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:24:03 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:24:03 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:24:03 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:24:03 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2434 ms
+2026-07-30 18:24:03 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:24:03 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:24:03 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:24:03 INFO  c.z.h.HikariDataSource:110 - HikariPool-9 - Starting...
+2026-07-30 18:24:03 INFO  c.z.h.p.HikariPool:565 - HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41bfc4ca
+2026-07-30 18:24:03 INFO  c.z.h.HikariDataSource:123 - HikariPool-9 - Start completed.
+2026-07-30 18:24:03 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:24:04 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:24:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:24:04 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:24:05 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@52ff6c6a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76813cb2, org.springframework.security.web.context.SecurityContextHolderFilter@74f135e9, org.springframework.security.web.header.HeaderWriterFilter@1d02f39f, org.springframework.web.filter.CorsFilter@7abb4402, org.springframework.security.web.authentication.logout.LogoutFilter@6e38effe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7b112be9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b660f79, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@198f48bc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@88766df, org.springframework.security.web.access.ExceptionTranslationFilter@2a170d84, org.springframework.security.web.access.intercept.AuthorizationFilter@36374020]
+2026-07-30 18:24:05 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:24:06 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:24:06 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 5.258 seconds (process running for 2799.786)
+2026-07-30 18:24:06 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:24:07 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2026-07-30 18:24:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:24:07 INFO  c.z.h.HikariDataSource:350 - HikariPool-9 - Shutdown initiated...
+2026-07-30 18:24:07 INFO  c.z.h.HikariDataSource:352 - HikariPool-9 - Shutdown completed.
+2026-07-30 18:24:08 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:24:08 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:24:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:24:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 259 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:24:10 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:24:10 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:24:10 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:24:10 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:24:10 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2583 ms
+2026-07-30 18:24:10 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:24:10 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:24:11 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:24:11 INFO  c.z.h.HikariDataSource:110 - HikariPool-10 - Starting...
+2026-07-30 18:24:11 INFO  c.z.h.p.HikariPool:565 - HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44e2eb5c
+2026-07-30 18:24:11 INFO  c.z.h.HikariDataSource:123 - HikariPool-10 - Start completed.
+2026-07-30 18:24:11 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:24:11 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:24:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:24:12 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:24:12 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6ed7e65e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f84b2a9, org.springframework.security.web.context.SecurityContextHolderFilter@324e046c, org.springframework.security.web.header.HeaderWriterFilter@6be8e848, org.springframework.web.filter.CorsFilter@f763dd, org.springframework.security.web.authentication.logout.LogoutFilter@51020bde, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2fca5482, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e8f92fa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f2b05a6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d644905, org.springframework.security.web.access.ExceptionTranslationFilter@6a89618c, org.springframework.security.web.access.intercept.AuthorizationFilter@54197eaa]
+2026-07-30 18:24:12 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:24:12 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:24:12 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 5.028 seconds (process running for 2806.685)
+2026-07-30 18:24:12 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:24:15 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2026-07-30 18:24:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:24:15 INFO  c.z.h.HikariDataSource:350 - HikariPool-10 - Shutdown initiated...
+2026-07-30 18:24:15 INFO  c.z.h.HikariDataSource:352 - HikariPool-10 - Shutdown completed.
+2026-07-30 18:24:15 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:24:15 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:24:16 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:24:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 103 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:24:17 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:24:17 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:24:17 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:24:17 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:24:17 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2075 ms
+2026-07-30 18:24:18 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:24:18 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:24:18 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:24:18 INFO  c.z.h.HikariDataSource:110 - HikariPool-11 - Starting...
+2026-07-30 18:24:18 INFO  c.z.h.p.HikariPool:565 - HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60240a47
+2026-07-30 18:24:18 INFO  c.z.h.HikariDataSource:123 - HikariPool-11 - Start completed.
+2026-07-30 18:24:18 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:24:19 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:24:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:24:21 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:24:21 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@76f1931b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13a90a70, org.springframework.security.web.context.SecurityContextHolderFilter@3dfcdd50, org.springframework.security.web.header.HeaderWriterFilter@45595497, org.springframework.web.filter.CorsFilter@74ce100c, org.springframework.security.web.authentication.logout.LogoutFilter@a2991e1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3091aa71, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d9f074c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e96ca69, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49b1eec6, org.springframework.security.web.access.ExceptionTranslationFilter@47688c4a, org.springframework.security.web.access.intercept.AuthorizationFilter@47041091]
+2026-07-30 18:24:21 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:24:21 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:24:21 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 6.286 seconds (process running for 2815.57)
+2026-07-30 18:24:21 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:24:23 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 5 class path changes (1 addition, 0 deletions, 4 modifications)
+2026-07-30 18:24:23 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:24:23 INFO  c.z.h.HikariDataSource:350 - HikariPool-11 - Shutdown initiated...
+2026-07-30 18:24:23 INFO  c.z.h.HikariDataSource:352 - HikariPool-11 - Shutdown completed.
+2026-07-30 18:24:23 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:24:23 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:24:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:24:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 85 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:24:25 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:24:25 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:24:25 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:24:26 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:24:26 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2231 ms
+2026-07-30 18:24:26 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:24:26 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:24:26 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:24:26 INFO  c.z.h.HikariDataSource:110 - HikariPool-12 - Starting...
+2026-07-30 18:24:26 INFO  c.z.h.p.HikariPool:565 - HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30a2bec
+2026-07-30 18:24:26 INFO  c.z.h.HikariDataSource:123 - HikariPool-12 - Start completed.
+2026-07-30 18:24:26 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:24:26 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:24:27 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:24:27 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:24:27 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@609f4174, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29110aa, org.springframework.security.web.context.SecurityContextHolderFilter@7f4ccb3d, org.springframework.security.web.header.HeaderWriterFilter@35883cf1, org.springframework.web.filter.CorsFilter@5f3a195d, org.springframework.security.web.authentication.logout.LogoutFilter@4acb8d3c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@762b90e0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3cc54ff6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@275c7ef4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@753c3eca, org.springframework.security.web.access.ExceptionTranslationFilter@123543e, org.springframework.security.web.access.intercept.AuthorizationFilter@1808afda]
+2026-07-30 18:24:28 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:24:28 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:24:28 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 4.649 seconds (process running for 2822.071)
+2026-07-30 18:24:28 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:24:30 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2026-07-30 18:24:30 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:24:30 INFO  c.z.h.HikariDataSource:350 - HikariPool-12 - Shutdown initiated...
+2026-07-30 18:24:30 INFO  c.z.h.HikariDataSource:352 - HikariPool-12 - Shutdown completed.
+2026-07-30 18:24:31 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:24:31 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:24:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:24:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 359 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:24:36 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:24:36 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:24:36 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:24:36 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:24:36 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 5296 ms
+2026-07-30 18:24:37 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:24:37 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:24:37 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:24:37 INFO  c.z.h.HikariDataSource:110 - HikariPool-13 - Starting...
+2026-07-30 18:24:37 INFO  c.z.h.p.HikariPool:565 - HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33a886f8
+2026-07-30 18:24:37 INFO  c.z.h.HikariDataSource:123 - HikariPool-13 - Start completed.
+2026-07-30 18:24:37 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:24:40 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:24:40 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:24:42 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:24:42 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@20c08e5e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73770948, org.springframework.security.web.context.SecurityContextHolderFilter@be92351, org.springframework.security.web.header.HeaderWriterFilter@74692f56, org.springframework.web.filter.CorsFilter@2eff42c1, org.springframework.security.web.authentication.logout.LogoutFilter@2a19be36, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@47cf709f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e3342ae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55067db0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12089409, org.springframework.security.web.access.ExceptionTranslationFilter@336b06ae, org.springframework.security.web.access.intercept.AuthorizationFilter@6816b867]
+2026-07-30 18:24:43 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:24:43 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:24:43 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 12.292 seconds (process running for 2836.923)
+2026-07-30 18:24:43 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:24:44 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 5 class path changes (0 additions, 0 deletions, 5 modifications)
+2026-07-30 18:24:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:24:44 INFO  c.z.h.HikariDataSource:350 - HikariPool-13 - Shutdown initiated...
+2026-07-30 18:24:44 INFO  c.z.h.HikariDataSource:352 - HikariPool-13 - Shutdown completed.
+2026-07-30 18:24:45 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:24:45 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:24:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:24:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 77 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:24:46 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:24:46 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:24:46 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:24:46 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:24:46 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1801 ms
+2026-07-30 18:24:47 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:24:47 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:24:47 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:24:47 INFO  c.z.h.HikariDataSource:110 - HikariPool-14 - Starting...
+2026-07-30 18:24:47 INFO  c.z.h.p.HikariPool:565 - HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79e13d1e
+2026-07-30 18:24:47 INFO  c.z.h.HikariDataSource:123 - HikariPool-14 - Start completed.
+2026-07-30 18:24:47 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:24:47 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:24:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:24:48 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:24:49 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2a9ba244, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@300e481c, org.springframework.security.web.context.SecurityContextHolderFilter@5defbf5d, org.springframework.security.web.header.HeaderWriterFilter@2e8a66d7, org.springframework.web.filter.CorsFilter@7218dbdd, org.springframework.security.web.authentication.logout.LogoutFilter@8517e79, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@293ab3ac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47421181, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@552541d2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e43b1e1, org.springframework.security.web.access.ExceptionTranslationFilter@5e999d96, org.springframework.security.web.access.intercept.AuthorizationFilter@209c5911]
+2026-07-30 18:24:49 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:24:49 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:24:49 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 4.604 seconds (process running for 2843.254)
+2026-07-30 18:24:49 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:24:51 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2026-07-30 18:24:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:24:52 INFO  c.z.h.HikariDataSource:350 - HikariPool-14 - Shutdown initiated...
+2026-07-30 18:24:52 INFO  c.z.h.HikariDataSource:352 - HikariPool-14 - Shutdown completed.
+2026-07-30 18:24:54 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:24:54 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:25:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:25:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 617 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:25:05 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:25:05 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:25:05 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:25:07 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:25:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 13120 ms
+2026-07-30 18:25:08 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:25:08 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:25:08 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:25:08 INFO  c.z.h.HikariDataSource:110 - HikariPool-15 - Starting...
+2026-07-30 18:25:08 INFO  c.z.h.p.HikariPool:565 - HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35cdc5bd
+2026-07-30 18:25:08 INFO  c.z.h.HikariDataSource:123 - HikariPool-15 - Start completed.
+2026-07-30 18:25:08 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:25:10 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:25:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:25:11 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:624 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig' defined in file [C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes\com\aipromptgovernance\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes\com\aipromptgovernance\service\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.aipromptgovernance.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: class com.aipromptgovernance.entity.User
+2026-07-30 18:25:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:25:11 INFO  c.z.h.HikariDataSource:350 - HikariPool-15 - Shutdown initiated...
+2026-07-30 18:25:11 INFO  c.z.h.HikariDataSource:352 - HikariPool-15 - Shutdown completed.
+2026-07-30 18:25:11 INFO  o.a.c.c.StandardService:173 - Stopping service [Tomcat]
+2026-07-30 18:25:11 INFO  o.s.b.a.l.ConditionEvaluationReportLogger:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-30 18:25:11 ERROR o.s.b.SpringApplication:839 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig' defined in file [C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes\com\aipromptgovernance\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes\com\aipromptgovernance\service\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.aipromptgovernance.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: class com.aipromptgovernance.entity.User
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:802) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:241) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1193) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:946) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.aipromptgovernance.AiPromptGovernanceApplication.main(AiPromptGovernanceApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes\com\aipromptgovernance\service\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.aipromptgovernance.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: class com.aipromptgovernance.entity.User
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:802) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:241) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1193) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1441) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1348) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789) ~[spring-beans-6.1.1.jar:6.1.1]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.aipromptgovernance.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: class com.aipromptgovernance.entity.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1441) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1348) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789) ~[spring-beans-6.1.1.jar:6.1.1]
+	... 38 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.aipromptgovernance.entity.User
+	at org.hibernate.metamodel.model.domain.internal.JpaMetamodelImpl.managedType(JpaMetamodelImpl.java:193) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.managedType(MappingMetamodelImpl.java:463) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.managedType(MappingMetamodelImpl.java:97) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:82) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:69) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:246) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:211) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:194) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:81) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:317) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:279) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:135) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.util.Lazy.get(Lazy.java:113) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:285) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar:6.1.1]
+	... 49 common frames omitted
+2026-07-30 18:25:52 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:25:52 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:26:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:26:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 82 ms. Found 0 JPA repository interfaces.
+2026-07-30 18:26:23 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:26:23 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:26:23 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:26:26 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:26:26 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 33687 ms
+2026-07-30 18:26:27 ERROR o.a.c.s.StandardManager:175 - Exception loading sessions from persistent storage
+java.lang.ClassNotFoundException: com.aipromptgovernance.entity.User
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadClass(TomcatEmbeddedWebappClassLoader.java:72) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.apache.catalina.util.CustomObjectInputStream.resolveClass(CustomObjectInputStream.java:158) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:2045) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1909) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2235) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1744) ~[na:na]
+	at java.base/java.io.ObjectInputStream$FieldValues.<init>(ObjectInputStream.java:2617) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2468) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2268) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1744) ~[na:na]
+	at java.base/java.io.ObjectInputStream$FieldValues.<init>(ObjectInputStream.java:2617) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2468) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2268) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1744) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:514) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:472) ~[na:na]
+	at org.apache.catalina.session.StandardSession.doReadObject(StandardSession.java:1415) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.session.StandardSession.readObjectData(StandardSession.java:985) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:210) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.session.StandardManager.load(StandardManager.java:156) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.session.StandardManager.startInternal(StandardManager.java:346) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4877) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:488) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:501) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:218) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.aipromptgovernance.AiPromptGovernanceApplication.main(AiPromptGovernanceApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+2026-07-30 18:26:30 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:26:30 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:26:30 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:26:33 INFO  c.z.h.HikariDataSource:110 - HikariPool-16 - Starting...
+2026-07-30 18:26:33 INFO  c.z.h.p.HikariPool:565 - HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14bb5d98
+2026-07-30 18:26:33 INFO  c.z.h.HikariDataSource:123 - HikariPool-16 - Start completed.
+2026-07-30 18:26:33 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:26:37 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:26:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:26:38 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:624 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig' defined in file [C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes\com\aipromptgovernance\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes\com\aipromptgovernance\service\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.aipromptgovernance.repository.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-07-30 18:26:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:26:38 INFO  c.z.h.HikariDataSource:350 - HikariPool-16 - Shutdown initiated...
+2026-07-30 18:26:38 INFO  c.z.h.HikariDataSource:352 - HikariPool-16 - Shutdown completed.
+2026-07-30 18:26:38 INFO  o.a.c.c.StandardService:173 - Stopping service [Tomcat]
+2026-07-30 18:26:38 INFO  o.s.b.a.l.ConditionEvaluationReportLogger:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-30 18:26:39 ERROR o.s.b.d.LoggingFailureAnalysisReporter:40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.aipromptgovernance.service.CustomUserDetailsService required a bean of type 'com.aipromptgovernance.repository.UserRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.aipromptgovernance.repository.UserRepository' in your configuration.
+
+2026-07-30 18:27:28 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:27:28 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:27:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:27:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 651 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:27:38 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:27:38 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:27:38 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:27:39 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:27:39 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 10581 ms
+2026-07-30 18:27:41 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:27:41 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:27:41 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:27:41 INFO  c.z.h.HikariDataSource:110 - HikariPool-17 - Starting...
+2026-07-30 18:27:41 INFO  c.z.h.p.HikariPool:565 - HikariPool-17 - Added connection com.mysql.cj.jdbc.ConnectionImpl@376cc28
+2026-07-30 18:27:41 INFO  c.z.h.HikariDataSource:123 - HikariPool-17 - Start completed.
+2026-07-30 18:27:41 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:27:42 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:27:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:27:43 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:624 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig' defined in file [C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes\com\aipromptgovernance\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes\com\aipromptgovernance\service\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.aipromptgovernance.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: class com.aipromptgovernance.entity.User
+2026-07-30 18:27:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:27:43 INFO  c.z.h.HikariDataSource:350 - HikariPool-17 - Shutdown initiated...
+2026-07-30 18:27:43 INFO  c.z.h.HikariDataSource:352 - HikariPool-17 - Shutdown completed.
+2026-07-30 18:27:43 INFO  o.a.c.c.StandardService:173 - Stopping service [Tomcat]
+2026-07-30 18:27:43 INFO  o.s.b.a.l.ConditionEvaluationReportLogger:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-30 18:27:44 ERROR o.s.b.SpringApplication:839 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig' defined in file [C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes\com\aipromptgovernance\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes\com\aipromptgovernance\service\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.aipromptgovernance.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: class com.aipromptgovernance.entity.User
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:802) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:241) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1193) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:946) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.aipromptgovernance.AiPromptGovernanceApplication.main(AiPromptGovernanceApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes\com\aipromptgovernance\service\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.aipromptgovernance.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: class com.aipromptgovernance.entity.User
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:802) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:241) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1193) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1441) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1348) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789) ~[spring-beans-6.1.1.jar:6.1.1]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.aipromptgovernance.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: class com.aipromptgovernance.entity.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1441) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1348) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789) ~[spring-beans-6.1.1.jar:6.1.1]
+	... 38 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.aipromptgovernance.entity.User
+	at org.hibernate.metamodel.model.domain.internal.JpaMetamodelImpl.managedType(JpaMetamodelImpl.java:193) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.managedType(MappingMetamodelImpl.java:463) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.managedType(MappingMetamodelImpl.java:97) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:82) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:69) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:246) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:211) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:194) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:81) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:317) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:279) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:135) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.util.Lazy.get(Lazy.java:113) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:285) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar:6.1.1]
+	... 49 common frames omitted
+2026-07-30 18:28:20 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:28:20 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:28:23 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:28:23 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 41 ms. Found 0 JPA repository interfaces.
+2026-07-30 18:28:25 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:28:25 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:28:25 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:28:25 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:28:25 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 5095 ms
+2026-07-30 18:28:26 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:28:26 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:28:26 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:28:26 INFO  c.z.h.HikariDataSource:110 - HikariPool-18 - Starting...
+2026-07-30 18:28:26 INFO  c.z.h.p.HikariPool:565 - HikariPool-18 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17f12f42
+2026-07-30 18:28:26 INFO  c.z.h.HikariDataSource:123 - HikariPool-18 - Start completed.
+2026-07-30 18:28:26 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:28:26 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:28:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:28:28 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:624 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig' defined in file [C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes\com\aipromptgovernance\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes\com\aipromptgovernance\service\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.aipromptgovernance.repository.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-07-30 18:28:28 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:28:28 INFO  c.z.h.HikariDataSource:350 - HikariPool-18 - Shutdown initiated...
+2026-07-30 18:28:28 INFO  c.z.h.HikariDataSource:352 - HikariPool-18 - Shutdown completed.
+2026-07-30 18:28:28 INFO  o.a.c.c.StandardService:173 - Stopping service [Tomcat]
+2026-07-30 18:28:28 INFO  o.s.b.a.l.ConditionEvaluationReportLogger:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-30 18:28:28 ERROR o.s.b.d.LoggingFailureAnalysisReporter:40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.aipromptgovernance.service.CustomUserDetailsService required a bean of type 'com.aipromptgovernance.repository.UserRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.aipromptgovernance.repository.UserRepository' in your configuration.
+
+2026-07-30 18:28:31 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:28:31 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:28:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:28:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 95 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:28:33 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:28:33 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:28:33 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:28:33 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:28:33 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2165 ms
+2026-07-30 18:28:33 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:28:33 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:28:33 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:28:33 INFO  c.z.h.HikariDataSource:110 - HikariPool-19 - Starting...
+2026-07-30 18:28:33 INFO  c.z.h.p.HikariPool:565 - HikariPool-19 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2530c118
+2026-07-30 18:28:33 INFO  c.z.h.HikariDataSource:123 - HikariPool-19 - Start completed.
+2026-07-30 18:28:33 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:28:33 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:28:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:28:34 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:28:34 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@28ee67c3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32a2b07, org.springframework.security.web.context.SecurityContextHolderFilter@3b7b53cd, org.springframework.security.web.header.HeaderWriterFilter@77cb7295, org.springframework.web.filter.CorsFilter@6f4fcdbe, org.springframework.security.web.authentication.logout.LogoutFilter@beb5cf2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7933b8db, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a071656, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@461c12d5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@bde55ec, org.springframework.security.web.access.ExceptionTranslationFilter@1a04d46f, org.springframework.security.web.access.intercept.AuthorizationFilter@6fb07733]
+2026-07-30 18:28:35 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:28:35 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:28:35 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 4.235 seconds (process running for 3068.911)
+2026-07-30 18:28:35 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:28:38 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2026-07-30 18:28:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:28:38 INFO  c.z.h.HikariDataSource:350 - HikariPool-19 - Shutdown initiated...
+2026-07-30 18:28:38 INFO  c.z.h.HikariDataSource:352 - HikariPool-19 - Shutdown completed.
+2026-07-30 18:28:38 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:28:38 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:28:39 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:28:39 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 132 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:28:40 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:28:40 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:28:40 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:28:40 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:28:40 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1802 ms
+2026-07-30 18:28:41 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:28:41 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:28:41 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:28:41 INFO  c.z.h.HikariDataSource:110 - HikariPool-20 - Starting...
+2026-07-30 18:28:41 INFO  c.z.h.p.HikariPool:565 - HikariPool-20 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26a9eee0
+2026-07-30 18:28:41 INFO  c.z.h.HikariDataSource:123 - HikariPool-20 - Start completed.
+2026-07-30 18:28:41 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:28:41 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:28:41 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:28:42 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:28:42 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68cedbd8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61daef0d, org.springframework.security.web.context.SecurityContextHolderFilter@6e9e6da9, org.springframework.security.web.header.HeaderWriterFilter@95affee, org.springframework.web.filter.CorsFilter@735baac0, org.springframework.security.web.authentication.logout.LogoutFilter@20d62f71, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79f2ce30, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@177929fa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63c3d843, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1cb779d5, org.springframework.security.web.access.ExceptionTranslationFilter@7fe175fb, org.springframework.security.web.access.intercept.AuthorizationFilter@3c22a3c]
+2026-07-30 18:28:43 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:28:43 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:28:43 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 4.674 seconds (process running for 3076.942)
+2026-07-30 18:28:43 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:28:44 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2026-07-30 18:28:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:28:44 INFO  c.z.h.HikariDataSource:350 - HikariPool-20 - Shutdown initiated...
+2026-07-30 18:28:44 INFO  c.z.h.HikariDataSource:352 - HikariPool-20 - Shutdown completed.
+2026-07-30 18:28:45 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:28:45 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:28:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:28:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 118 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:28:47 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:28:47 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:28:47 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:28:47 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:28:47 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2309 ms
+2026-07-30 18:28:47 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:28:47 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:28:47 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:28:47 INFO  c.z.h.HikariDataSource:110 - HikariPool-21 - Starting...
+2026-07-30 18:28:47 INFO  c.z.h.p.HikariPool:565 - HikariPool-21 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ab0895d
+2026-07-30 18:28:47 INFO  c.z.h.HikariDataSource:123 - HikariPool-21 - Start completed.
+2026-07-30 18:28:47 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:28:47 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:28:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:28:48 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:28:49 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@27da6081, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@193079e2, org.springframework.security.web.context.SecurityContextHolderFilter@34d85e6b, org.springframework.security.web.header.HeaderWriterFilter@565031ec, org.springframework.web.filter.CorsFilter@31bf8725, org.springframework.security.web.authentication.logout.LogoutFilter@371d6726, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7b220c94, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31ddd8ac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1648de17, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a127b2a, org.springframework.security.web.access.ExceptionTranslationFilter@3a23b222, org.springframework.security.web.access.intercept.AuthorizationFilter@383212ab]
+2026-07-30 18:28:49 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:28:49 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:28:49 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 4.384 seconds (process running for 3083.117)
+2026-07-30 18:28:49 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:28:51 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2026-07-30 18:28:51 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:28:51 INFO  c.z.h.HikariDataSource:350 - HikariPool-21 - Shutdown initiated...
+2026-07-30 18:28:51 INFO  c.z.h.HikariDataSource:352 - HikariPool-21 - Shutdown completed.
+2026-07-30 18:28:52 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:28:52 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:28:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:28:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 150 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:28:57 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:28:57 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:28:57 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:28:57 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:28:57 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 5458 ms
+2026-07-30 18:28:58 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:28:58 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:28:58 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:28:58 INFO  c.z.h.HikariDataSource:110 - HikariPool-22 - Starting...
+2026-07-30 18:28:58 INFO  c.z.h.p.HikariPool:565 - HikariPool-22 - Added connection com.mysql.cj.jdbc.ConnectionImpl@274b61ad
+2026-07-30 18:28:58 INFO  c.z.h.HikariDataSource:123 - HikariPool-22 - Start completed.
+2026-07-30 18:28:58 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:28:58 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:28:58 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:28:59 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:28:59 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@70d15b7f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4cc47a84, org.springframework.security.web.context.SecurityContextHolderFilter@77e5fd7c, org.springframework.security.web.header.HeaderWriterFilter@76e78130, org.springframework.web.filter.CorsFilter@3bbfc51d, org.springframework.security.web.authentication.logout.LogoutFilter@31582600, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@491550, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@95ab08c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23aad304, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7314a4af, org.springframework.security.web.access.ExceptionTranslationFilter@59de708b, org.springframework.security.web.access.intercept.AuthorizationFilter@189de23b]
+2026-07-30 18:28:59 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:29:00 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:29:00 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 7.971 seconds (process running for 3093.783)
+2026-07-30 18:29:00 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:29:02 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2026-07-30 18:29:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:29:02 INFO  c.z.h.HikariDataSource:350 - HikariPool-22 - Shutdown initiated...
+2026-07-30 18:29:02 INFO  c.z.h.HikariDataSource:352 - HikariPool-22 - Shutdown completed.
+2026-07-30 18:29:02 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:29:02 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:29:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:29:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 104 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:29:04 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:29:04 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:29:04 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:29:04 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:29:04 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1848 ms
+2026-07-30 18:29:04 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:29:04 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:29:04 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:29:04 INFO  c.z.h.HikariDataSource:110 - HikariPool-23 - Starting...
+2026-07-30 18:29:04 INFO  c.z.h.p.HikariPool:565 - HikariPool-23 - Added connection com.mysql.cj.jdbc.ConnectionImpl@303dd80e
+2026-07-30 18:29:04 INFO  c.z.h.HikariDataSource:123 - HikariPool-23 - Start completed.
+2026-07-30 18:29:04 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:29:05 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:29:05 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:29:06 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:29:06 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@162af006, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79e9411a, org.springframework.security.web.context.SecurityContextHolderFilter@71880d5, org.springframework.security.web.header.HeaderWriterFilter@2e370ea3, org.springframework.web.filter.CorsFilter@767f0e88, org.springframework.security.web.authentication.logout.LogoutFilter@7f54e373, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4e3dddc9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1cc3380f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2add93e1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@568c461b, org.springframework.security.web.access.ExceptionTranslationFilter@4faf30f6, org.springframework.security.web.access.intercept.AuthorizationFilter@3cd679e6]
+2026-07-30 18:29:06 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:29:06 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:29:06 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 4.181 seconds (process running for 3100.67)
+2026-07-30 18:29:06 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:29:08 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2026-07-30 18:29:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:29:08 INFO  c.z.h.HikariDataSource:350 - HikariPool-23 - Shutdown initiated...
+2026-07-30 18:29:08 INFO  c.z.h.HikariDataSource:352 - HikariPool-23 - Shutdown completed.
+2026-07-30 18:29:08 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:29:08 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:29:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:29:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 111 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:29:10 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:29:10 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:29:10 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:29:10 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:29:10 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2100 ms
+2026-07-30 18:29:11 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:29:11 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:29:11 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:29:11 INFO  c.z.h.HikariDataSource:110 - HikariPool-24 - Starting...
+2026-07-30 18:29:11 INFO  c.z.h.p.HikariPool:565 - HikariPool-24 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4881a342
+2026-07-30 18:29:11 INFO  c.z.h.HikariDataSource:123 - HikariPool-24 - Start completed.
+2026-07-30 18:29:11 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:29:11 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:29:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:29:12 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:29:12 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2bbd308a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6791005b, org.springframework.security.web.context.SecurityContextHolderFilter@73b6a22b, org.springframework.security.web.header.HeaderWriterFilter@fccdca7, org.springframework.web.filter.CorsFilter@173198ab, org.springframework.security.web.authentication.logout.LogoutFilter@4af306ed, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@792b952c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5211c6b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65528b47, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3296fd94, org.springframework.security.web.access.ExceptionTranslationFilter@7268a390, org.springframework.security.web.access.intercept.AuthorizationFilter@67f2e456]
+2026-07-30 18:29:13 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:29:13 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:29:13 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 4.62 seconds (process running for 3107.03)
+2026-07-30 18:29:13 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:29:14 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2026-07-30 18:29:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:29:15 INFO  c.z.h.HikariDataSource:350 - HikariPool-24 - Shutdown initiated...
+2026-07-30 18:29:15 INFO  c.z.h.HikariDataSource:352 - HikariPool-24 - Shutdown completed.
+2026-07-30 18:29:15 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:29:15 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:29:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:29:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 200 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:29:18 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:29:18 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:29:18 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:29:18 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:29:18 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2677 ms
+2026-07-30 18:29:18 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:29:18 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:29:18 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:29:18 INFO  c.z.h.HikariDataSource:110 - HikariPool-25 - Starting...
+2026-07-30 18:29:18 INFO  c.z.h.p.HikariPool:565 - HikariPool-25 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4517a16a
+2026-07-30 18:29:18 INFO  c.z.h.HikariDataSource:123 - HikariPool-25 - Start completed.
+2026-07-30 18:29:18 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:29:18 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:29:18 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:29:18 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:29:19 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@29e348e9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ddebf5c, org.springframework.security.web.context.SecurityContextHolderFilter@79b45d1b, org.springframework.security.web.header.HeaderWriterFilter@1589020f, org.springframework.web.filter.CorsFilter@2a57ed28, org.springframework.security.web.authentication.logout.LogoutFilter@53582ba1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3b746905, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b6b24bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@559b0ae2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32f39526, org.springframework.security.web.access.ExceptionTranslationFilter@3625096a, org.springframework.security.web.access.intercept.AuthorizationFilter@4cc5657a]
+2026-07-30 18:29:19 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:29:19 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:29:19 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 4.101 seconds (process running for 3113.114)
+2026-07-30 18:29:19 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:36:51 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-30 18:36:51 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:36:51 INFO  c.z.h.HikariDataSource:350 - HikariPool-25 - Shutdown initiated...
+2026-07-30 18:36:51 INFO  c.z.h.HikariDataSource:352 - HikariPool-25 - Shutdown completed.
+2026-07-30 18:36:51 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:36:51 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:36:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:36:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:36:52 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:36:52 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:36:52 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:36:52 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:36:52 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1006 ms
+2026-07-30 18:36:52 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:36:52 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:36:52 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:36:52 INFO  c.z.h.HikariDataSource:110 - HikariPool-26 - Starting...
+2026-07-30 18:36:52 INFO  c.z.h.p.HikariPool:565 - HikariPool-26 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3284b1a0
+2026-07-30 18:36:52 INFO  c.z.h.HikariDataSource:123 - HikariPool-26 - Start completed.
+2026-07-30 18:36:52 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:36:53 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:36:53 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:36:53 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:36:53 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@40940c53, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72f0f9dc, org.springframework.security.web.context.SecurityContextHolderFilter@6e8d7cea, org.springframework.security.web.header.HeaderWriterFilter@c474683, org.springframework.web.filter.CorsFilter@1111b9ca, org.springframework.security.web.authentication.logout.LogoutFilter@75fd8409, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d22f7dd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c3b0b63, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42339489, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4bd7382a, org.springframework.security.web.access.ExceptionTranslationFilter@11c1faef, org.springframework.security.web.access.intercept.AuthorizationFilter@54e6ec84]
+2026-07-30 18:36:53 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:36:54 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:36:54 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 2.342 seconds (process running for 3567.768)
+2026-07-30 18:36:54 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:37:06 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-30 18:37:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:37:06 INFO  c.z.h.HikariDataSource:350 - HikariPool-26 - Shutdown initiated...
+2026-07-30 18:37:06 INFO  c.z.h.HikariDataSource:352 - HikariPool-26 - Shutdown completed.
+2026-07-30 18:37:07 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:37:07 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:37:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:37:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:37:08 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:37:08 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:37:08 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:37:08 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:37:08 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1432 ms
+2026-07-30 18:37:08 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:37:08 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:37:08 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:37:08 INFO  c.z.h.HikariDataSource:110 - HikariPool-27 - Starting...
+2026-07-30 18:37:08 INFO  c.z.h.p.HikariPool:565 - HikariPool-27 - Added connection com.mysql.cj.jdbc.ConnectionImpl@549c02cc
+2026-07-30 18:37:08 INFO  c.z.h.HikariDataSource:123 - HikariPool-27 - Start completed.
+2026-07-30 18:37:08 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:37:09 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:37:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:37:09 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:37:09 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45a3b635, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@567bbd21, org.springframework.security.web.context.SecurityContextHolderFilter@1b16622e, org.springframework.security.web.header.HeaderWriterFilter@3cdee0cb, org.springframework.web.filter.CorsFilter@574e9b37, org.springframework.security.web.authentication.logout.LogoutFilter@6f35328b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3c47dac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39f0be33, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c095ea6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7747b56f, org.springframework.security.web.access.ExceptionTranslationFilter@3010bb90, org.springframework.security.web.access.intercept.AuthorizationFilter@153280d1]
+2026-07-30 18:37:09 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:37:09 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:37:09 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 2.503 seconds (process running for 3583.459)
+2026-07-30 18:37:09 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:45:10 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-30 18:45:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:45:10 INFO  c.z.h.HikariDataSource:350 - HikariPool-27 - Shutdown initiated...
+2026-07-30 18:45:10 INFO  c.z.h.HikariDataSource:352 - HikariPool-27 - Shutdown completed.
+2026-07-30 18:45:10 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:45:10 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:45:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:45:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 97 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:45:12 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:45:12 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:45:12 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:45:12 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:45:12 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1129 ms
+2026-07-30 18:45:12 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:45:12 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:45:12 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:45:12 INFO  c.z.h.HikariDataSource:110 - HikariPool-28 - Starting...
+2026-07-30 18:45:12 INFO  c.z.h.p.HikariPool:565 - HikariPool-28 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24873e16
+2026-07-30 18:45:12 INFO  c.z.h.HikariDataSource:123 - HikariPool-28 - Start completed.
+2026-07-30 18:45:12 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:45:12 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:45:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:45:12 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:45:13 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@288aaf9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a67c6ee, org.springframework.security.web.context.SecurityContextHolderFilter@5ceb3374, org.springframework.security.web.header.HeaderWriterFilter@67e0b64e, org.springframework.web.filter.CorsFilter@6fdfcb5, org.springframework.security.web.authentication.logout.LogoutFilter@1c723d68, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@42ea96e6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20926e1e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48e62f25, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1036172a, org.springframework.security.web.access.ExceptionTranslationFilter@76d3c9e0, org.springframework.security.web.access.intercept.AuthorizationFilter@4ffe7b0c]
+2026-07-30 18:45:13 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:45:13 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:45:13 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 2.479 seconds (process running for 4067.143)
+2026-07-30 18:45:13 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 18:49:33 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-30 18:49:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:49:33 INFO  c.z.h.HikariDataSource:350 - HikariPool-28 - Shutdown initiated...
+2026-07-30 18:49:33 INFO  c.z.h.HikariDataSource:352 - HikariPool-28 - Shutdown completed.
+2026-07-30 18:49:34 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 28196 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 18:49:34 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 18:49:37 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 18:49:37 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 91 ms. Found 3 JPA repository interfaces.
+2026-07-30 18:49:37 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 18:49:37 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 18:49:37 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 18:49:38 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 18:49:38 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 3391 ms
+2026-07-30 18:49:38 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 18:49:38 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 18:49:38 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 18:49:38 INFO  c.z.h.HikariDataSource:110 - HikariPool-29 - Starting...
+2026-07-30 18:49:38 INFO  c.z.h.p.HikariPool:565 - HikariPool-29 - Added connection com.mysql.cj.jdbc.ConnectionImpl@146134ee
+2026-07-30 18:49:38 INFO  c.z.h.HikariDataSource:123 - HikariPool-29 - Start completed.
+2026-07-30 18:49:38 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 18:49:38 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 18:49:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 18:49:39 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 18:49:39 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34acb9a3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54b805ed, org.springframework.security.web.context.SecurityContextHolderFilter@6001a8ce, org.springframework.security.web.header.HeaderWriterFilter@30ff688a, org.springframework.web.filter.CorsFilter@1c943176, org.springframework.security.web.authentication.logout.LogoutFilter@2c9b53e1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@944aa0a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f0792e5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79a2679b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@302cdc14, org.springframework.security.web.access.ExceptionTranslationFilter@75286771, org.springframework.security.web.access.intercept.AuthorizationFilter@7f36ea56]
+2026-07-30 18:49:39 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 18:49:39 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 18:49:39 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 5.636 seconds (process running for 4333.732)
+2026-07-30 18:49:39 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2026-07-30 19:07:09 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-30 19:07:09 INFO  o.s.w.s.DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2026-07-30 19:07:09 INFO  o.s.w.s.DispatcherServlet:554 - Completed initialization in 2 ms
+2026-07-30 19:07:09 WARN  o.s.w.s.h.HandlerMappingIntrospector:454 - Cache miss for REQUEST dispatch to '/' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-07-30 19:07:09 WARN  o.s.w.s.h.HandlerMappingIntrospector:454 - Cache miss for REQUEST dispatch to '/' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-07-30 19:07:16 WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor:385 - [THYMELEAF][http-nio-8080-exec-7][dashboard] Deprecated unwrapped fragment expression "fragments/layout :: sidebar" found in template dashboard, line 17, col 14. Please use the complete syntax of fragment expressions instead ("~{fragments/layout :: sidebar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-07-30 19:07:17 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:227 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-07-30 19:07:18 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:227 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-07-30 19:07:20 INFO  c.a.s.AiImproverServiceImpl:65 - Calling Ollama API at: http://localhost:11434/api/generate  with model: llama3
+2026-07-30 19:08:20 INFO  c.a.AiPromptGovernanceApplication:50 - Starting AiPromptGovernanceApplication using Java 17.0.12 with PID 17912 (C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance\target\classes started by ojesh_hpnmmdy in C:\Users\ojesh_hpnmmdy\Downloads\AI prompt governance)
+2026-07-30 19:08:20 INFO  c.a.AiPromptGovernanceApplication:653 - No active profile set, falling back to 1 default profile: "default"
+2026-07-30 19:08:20 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-30 19:08:20 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-30 19:08:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-30 19:08:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:208 - Finished Spring Data repository scanning in 328 ms. Found 3 JPA repository interfaces.
+2026-07-30 19:08:24 INFO  o.s.b.w.e.t.TomcatWebServer:108 - Tomcat initialized with port 8080 (http)
+2026-07-30 19:08:24 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2026-07-30 19:08:24 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-30 19:08:25 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2026-07-30 19:08:25 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 4588 ms
+2026-07-30 19:08:25 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-30 19:08:26 INFO  o.h.Version:44 - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-07-30 19:08:26 INFO  o.h.c.i.RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2026-07-30 19:08:28 INFO  o.s.o.j.p.SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-30 19:08:28 INFO  c.z.h.HikariDataSource:110 - HikariPool-1 - Starting...
+2026-07-30 19:08:29 INFO  c.z.h.p.HikariPool:565 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c421d53
+2026-07-30 19:08:29 INFO  c.z.h.HikariDataSource:123 - HikariPool-1 - Start completed.
+2026-07-30 19:08:29 WARN  o.h.o.deprecation:152 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-30 19:08:34 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-30 19:08:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-30 19:08:35 INFO  o.s.d.j.r.q.QueryEnhancerFactory:49 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-30 19:08:37 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-30 19:08:38 INFO  o.s.s.w.DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b17f027, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5225bb60, org.springframework.security.web.context.SecurityContextHolderFilter@66fa4eb1, org.springframework.security.web.header.HeaderWriterFilter@3bfcc530, org.springframework.web.filter.CorsFilter@73afea02, org.springframework.security.web.authentication.logout.LogoutFilter@38967f3f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6f29c056, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@263646b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@198dfd47, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@537129f6, org.springframework.security.web.access.ExceptionTranslationFilter@71db483f, org.springframework.security.web.access.intercept.AuthorizationFilter@316519dc]
+2026-07-30 19:08:39 INFO  o.s.b.d.a.OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2026-07-30 19:08:39 INFO  o.s.b.w.e.t.TomcatWebServer:221 - Tomcat started on port 8080 (http) with context path ''
+2026-07-30 19:08:39 INFO  c.a.AiPromptGovernanceApplication:56 - Started AiPromptGovernanceApplication in 19.937 seconds (process running for 20.564)
+2026-07-30 19:08:53 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-30 19:08:53 INFO  o.s.w.s.DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2026-07-30 19:08:53 INFO  o.s.w.s.DispatcherServlet:554 - Completed initialization in 2 ms
+2026-07-30 19:08:53 WARN  o.s.w.s.h.HandlerMappingIntrospector:454 - Cache miss for REQUEST dispatch to '/prompts/improve/2' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-07-30 19:08:54 WARN  o.s.w.s.h.HandlerMappingIntrospector:454 - Cache miss for REQUEST dispatch to '/prompts/improve/2' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-07-30 19:08:54 WARN  o.a.c.u.SessionIdGeneratorBase:173 - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [164] milliseconds.
+2026-07-30 19:09:05 WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor:385 - [THYMELEAF][http-nio-8080-exec-7][dashboard] Deprecated unwrapped fragment expression "fragments/layout :: sidebar" found in template dashboard, line 17, col 14. Please use the complete syntax of fragment expressions instead ("~{fragments/layout :: sidebar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-07-30 19:09:05 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:227 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-07-30 19:09:08 WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor:385 - [THYMELEAF][http-nio-8080-exec-1][prompts/form] Deprecated unwrapped fragment expression "fragments/layout :: sidebar" found in template prompts/form, line 15, col 14. Please use the complete syntax of fragment expressions instead ("~{fragments/layout :: sidebar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-07-30 19:09:08 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:227 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-07-30 19:09:21 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:227 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-07-30 19:09:25 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:227 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-07-30 19:09:44 INFO  c.a.s.AiImproverServiceImpl:65 - Calling Ollama API at: http://localhost:11434/api/generate  with model: llama3
+2026-07-30 19:10:48 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:227 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
